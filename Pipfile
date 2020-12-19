@@ -12,9 +12,13 @@ black = "*"
 pre-commit = "*"
 wheel = "*"
 twine = "*"
+ipykernel = "*"
 
 [packages]
 apd-octopusenergy = {editable = true,path = "."}
+requests = "*"
+apd-sensors = "*"
+pint = "*"
 
 [requires]
 
