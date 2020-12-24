@@ -8,14 +8,12 @@ pytest = "*"
 pytest-cov = "*"
 mypy = "*"
 flake8 = "*"
-black = "*"
 pre-commit = "*"
 wheel = "*"
 twine = "*"
 ipykernel = "*"
 
 [packages]
-apd-octopusenergy = {editable = true,path = "."}
 requests = "*"
 apd-sensors = "*"
 pint = "*"
@@ -24,3 +22,11 @@ pint = "*"
 
 [pipenv]
 allow_prereleases = true
+
+[packages.apd-octopusenergy]
+editable = true
+path = "."
+
+[packages.e1839a8]
+path = "."
+editable = true
