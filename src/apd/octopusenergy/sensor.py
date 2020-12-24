@@ -6,13 +6,13 @@ import typing as t
 
 from pint import _DEFAULT_REGISTRY as ureg
 
-from apd.sensors.base import Sensor
+from apd.sensors.base import HistoricalSensor
 from apd.sensors.exceptions import (
     PersistentSensorFailureError,
     IntermittentSensorFailureError,
 )
 
-class OctopusPowerUsage(Sensor[t.Any]):
+class OctopusPowerUsage(HistoricalSensor[t.Any]):
 
     def value(self) -> t.Optional[t.Any]:
         raise PersistentSensorFailureError("Only historical data is available")
